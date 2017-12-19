@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:alpha="1"
+        android:background="@color/title_blue">
+
+        <ImageView
+            android:id="@+id/activity_retail_and_scan_scan_ig_back"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/btn_back_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="@string/activity_retail_and_scan_scan_tv_back"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/activity_retail_and_scan_scan_ig_back"
+            android:layout_toEndOf="@+id/activity_retail_and_scan_scan_ig_back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SwitchLight"
+            android:id="@+id/btn_switch"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hint_1"
+            android:id="@+id/btn_hint1"
+            android:layout_alignTop="@+id/btn_switch"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hint_2"
+            android:id="@+id/btn_hint2"
+            android:layout_alignTop="@+id/btn_hint1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
+        <!-- 这个控件是扫描的窗口 -->
+        <com.journeyapps.barcodescanner.DecoratedBarcodeView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/dbv_custom"
+            app:zxing_framing_rect_width="300dp"
+            app:zxing_framing_rect_height="300dp"
+
+            app:zxing_preview_scaling_strategy="fitXY"
+            app:zxing_use_texture_view="true"
+            app:zxing_scanner_layout="@layout/barcode_scanner"
+            android:layout_above="@+id/btn_switch"
+            android:layout_alignEnd="@+id/btn_hint2"
+            android:layout_alignRight="@+id/btn_hint2">
+        </com.journeyapps.barcodescanner.DecoratedBarcodeView>
+    </RelativeLayout>
+</LinearLayout>

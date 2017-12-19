@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--普通颜色-->
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#ff000000</color>
+    <color name="gray">#666666</color>
+    <color name="light_gray">#999999</color>
+    <color name="light_gray_map">#808080</color>
+    <color name="shop_address_gray">#9B9B9B</color>
+    <color name="title_blue">#03A9F4</color>
+    <color name="mid_gray">#7D7D7D</color>
+    <color name="record_gray">#626262</color>
+    <color name="record_integer">#6AC1B1</color>
+    <color name="record_integer_point">#43A6DD</color>
+    <color name="no_score_or_sale_record">#C6C6C6</color>
+</resources>
